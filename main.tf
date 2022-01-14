@@ -11,7 +11,7 @@ module "oci_transit_1" {
 
   name = "avffhub"
   ha_gw = "false"
-  instance_size = "VM.Standard.E2.1.Micro"
+  
 }
 
 # OCI Spoke Module
@@ -28,6 +28,6 @@ module "oci_spoke_1" {
   transit_gw      = "avx-avffhub-transit"
   
   ha_gw = "false"
-  instance_size = "VM.Standard.E2.1.Micro"
+  
   
 }
